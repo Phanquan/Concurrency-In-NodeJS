@@ -167,7 +167,9 @@ Tôi đã biết về Cluster module trong một thời gian dài. Nhưng dạo 
 
 > node cluster.js
 
-![CLuster](cluster3.png)
-	> Tại cửa sổ Command,ta sẽ thấy cluster tạo ra 1 master và 4 worker tương ứng với 4 cores của máy chủ.
-	> Tại của sổ Resources Monitor,ta sẽ thấy 5files Node.exe có số PID tương ứng với master và workers ở trên.
-	> Tại Task Manager,ta cũng thấy 5 files node tương ứng.
+![Cluster](./images/cluster3.png)
+	> Tại cửa sổ Command,ta sẽ thấy cluster tạo ra 1 master và 4 worker tương ứng với 4 cores của máy chủ.  
+	> Tại của sổ Resources Monitor,ta sẽ thấy 5files Node.exe có số PID tương ứng với master và workers ở trên.  
+	> Tại Task Manager,ta cũng thấy 5 files node tương ứng.  
+	
+ 
