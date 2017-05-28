@@ -7,6 +7,8 @@
 *  Dịch bởi Phan Quân  
 *  Nguồn https://www.bennadel.com/blog/3234-hello-world-concurrency-in-node-js-using-the-cluster-module.htm  
 
+## Bài Dịch
+
 Gần đây,tôi cảm thấy rất bối rối với một số vấn đề về kiến trúc phần mềm,nên tôi đành đọc lại bài viết  Clean Code: A Handbook Of Agile Software Craftsmanship by [Uncle Bob] Robert C. Martin. Một trong những themes (chủ đề) mà liên tục được nhắc tới trong bài viết là những vấn đề bị thay đổi bởi nhiều lý do khác nhau nên phải phân chia riêng rẽ chúng.Ví dụ,trong chương Concurrency (Phân phối chức năng),Chú Bob có viết:
 
 > Các Trạng thái chính yếu duy nhất (Single Responsibility Principle) vốn đưa ra các Method/Class/Component nên chỉ có một Tác nhân thay đổi (reason to change).  
@@ -150,4 +152,22 @@ Nói dông nói dài, nếu ta chạy ứng dụng, sử dụng cluster.js như 
 
 <image-terminal>
 
-Tôi đã biết về Cluster module trong một thời gian dài. Nhưng dạo trước nó không hẳn là một module 'ổn định', thế nên tôi không dành thời gian nghịch nó. Còn bây giờ nó đã 'ổn định' thì lại khá hay. Tất nhiên là sử dụng Cluster khi code sẽ cần nhiều logic hơn những gì tôi viết trên và nhìn chung mà nói, Cluster cho bạn những lợi ích to lớn mà không phải quan tâm xử lý nhiều.
+Tôi đã biết về Cluster module trong một thời gian dài. Nhưng dạo trước nó không hẳn là một module 'ổn định', thế nên tôi không dành thời gian nghịch nó. Còn bây giờ nó đã 'ổn định' thì lại khá hay. Tất nhiên là sử dụng Cluster khi code sẽ cần nhiều logic hơn những gì tôi viết trên và nhìn chung mà nói, Cluster cho bạn những lợi ích to lớn mà không phải quan tâm xử lý nhiều.  
+
+## Test
+
+* Setup các Modules cần thiết:  
+
+> npm install node_modules --save  
+> npm install chalk --save  
+> npm install cluster --save  
+> npm i os --save  
+
+* Sử dụng Terminal để chạy Cluster:
+
+> node cluster.js
+
+![CLuster](cluster3.png)
+	> Tại cửa sổ Command,ta sẽ thấy cluster tạo ra 1 master và 4 worker tương ứng với 4 cores của máy chủ.
+	> Tại của sổ Resources Monitor,ta sẽ thấy 5files Node.exe có số PID tương ứng với master và workers ở trên.
+	> Tại Task Manager,ta cũng thấy 5 files node tương ứng.
