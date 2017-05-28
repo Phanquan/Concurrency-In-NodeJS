@@ -1,11 +1,11 @@
 
 # Hello World: Phân phối chức năng trong NodeJS sử dụng Cluster Module.
 
-> Concurrency in NodeJS using the Cluster Module
-> Viết bởi Ben Nadel vào mùng 7 tháng 5 năm 2017
-> Tags: Javascript / DHTML
-> Dịch bởi Phan Quân
-> Nguồn
+* Concurrency in NodeJS using the Cluster Module  
+*  Viết bởi Ben Nadel vào mùng 7 tháng 5 năm 2017  
+*  Tags: Javascript / DHTML  
+*  Dịch bởi Phan Quân  
+*  Nguồn https://www.bennadel.com/blog/3234-hello-world-concurrency-in-node-js-using-the-cluster-module.htm  
 
 Gần đây,tôi cảm thấy rất bối rối với một số vấn đề về kiến trúc phần mềm,nên tôi đành đọc lại bài viết  Clean Code: A Handbook Of Agile Software Craftsmanship by [Uncle Bob] Robert C. Martin. Một trong những themes (chủ đề) mà liên tục được nhắc tới trong bài viết là những vấn đề bị thay đổi bởi nhiều lý do khác nhau nên phải phân chia riêng rẽ chúng.Ví dụ,trong chương Concurrency (Phân phối chức năng),Chú Bob có viết:
 
