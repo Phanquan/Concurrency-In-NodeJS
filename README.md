@@ -137,10 +137,12 @@ http
 ```
 
 Như bạn thấy, chẳng có gì trong module này liên quan tới Cluster về mặt chức năng (chỉ trừ hàm setTimeOut() được sử dụng trong demo). Việc này không chỉ phân chia riêng rẽ vấn đề, nó còn giúp ta có thể chạy ứng dụng với Cluster:  
-	> node ./cluster.js  
+
+> node ./cluster.js   
 
 hoặc không cần cluster, chạy như một process độc lập:  
-	> node ./server.js  
+
+> node ./server.js  
 
 Việc trên giúp ta debug dễ dàng hơn rất nhiều trong khi debug vào trong các process dễ gây khó hiểu hơn rất nhiều.
 
