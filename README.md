@@ -167,9 +167,10 @@ Tôi đã biết về Cluster module trong một thời gian dài. Nhưng dạo 
 
 > node cluster.js
 
-![Cluster](./images/cluster2.png)
+![Cluster](./images/cluster3.png)
 	> Tại cửa sổ Command,ta sẽ thấy cluster tạo ra 1 master và 4 worker tương ứng với 4 cores của máy chủ.  
 	> Tại của sổ Resources Monitor,ta sẽ thấy 5files Node.exe có số PID tương ứng với master và workers ở trên.  
 	> Tại Task Manager,ta cũng thấy 5 files node tương ứng.  
 	
- 
+ * Ta sẽ kiểm tra Phân phối chức năng bằng cách dùng Task Manager để xóa từng files node trên và mỗi lần xóa,cluster sẽ khai tử worker và tạo mới ngay lập tức như trong ảnh trên.
+ ![Cluster-exit](./images/cluster4.png)
